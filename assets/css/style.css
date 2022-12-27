@@ -1,0 +1,374 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Common ------ */
+@font-face {
+    font-family: oswald;
+    src: url(/Practise/Fashion-blog/assets/fonts/Font_oswald/Oswald-VariableFont_wght.ttf);
+}
+
+html {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.4;
+}
+
+li {
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: oswald;
+    font-weight: 500;
+    margin: 10px 0px;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+h6 {
+    font-size: 16px;
+}
+
+p {
+    text-align: justify;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+a {
+    color: #000;
+}
+
+.font-15 {
+    font-size: 15px;
+}
+
+.font-18 {
+    font-size: 18px;
+}
+
+.font-20 {
+    font-size: 20px;
+}
+
+.font-12 {
+    font-size: 12px;
+}
+
+.font-48 {
+    font-size: 48px;
+}
+
+.font-64 {
+    font-size: 64px;
+}
+
+.opal06 {
+    opacity: 0.6;
+}
+
+.text-upper {
+    text-transform: uppercase;
+}
+
+.padd-12-24 {
+    padding: 12px 24px;
+}
+
+.padd-8-16 {
+    padding: 8px 16px;
+}
+
+.padd-16-16 {
+    padding: 16px;
+}
+
+.padd-8-8 {
+    padding: 8px;
+}
+
+.padd-lr8 {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.padd-lr16 {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.padd-tb24 {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.mar-16-16 {
+    margin: 16px;
+}
+
+.mar-8-8 {
+    margin: 8px;
+}
+
+.mar-lr8 {
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.mar-r16 {
+    margin-right: 16px;
+}
+
+.mar-l8 {
+    margin-left: 8px;
+}
+
+.mar-b16 {
+    margin-bottom: 16px;
+}
+
+.maxwidth1600 {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.clear {
+    clear: both;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.col {
+    float: left;
+}
+
+.col-20 {
+    width: 20%;
+}
+
+.col-80 {
+    width: 80%;
+}
+
+.col-66 {
+    width: 66.66666%;
+}
+
+.col-33 {
+    width: 33.33333%;
+}
+
+.col-50 {
+    width: 50%;
+}
+
+.col::after,
+.row::after,
+.float-left::after,
+.float-right::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.btn {
+    border: 1px solid #ccc;
+    font-size: inherit;
+    padding: 8px 16px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+.back-white {
+    color: #000;
+    background-color: #fff;
+}
+
+.back-black {
+    background-color: #000;
+    color: #fff;
+}
+
+.back-light-gray {
+    background-color: #f1f1f1 !important;
+}
+
+.grayscale {
+    filter: grayscale(75%);
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.none-decoration {
+    text-decoration: none;
+}
+
+.text-white {
+    color: #fff;
+}
+
+.border-top {
+    border: none;
+    border-top: 1px solid #ccc;
+}
+/* ------ End common */
+
+#header {
+    height: 38px;
+    background-color: #000;
+}
+
+.nav li a {
+    color: #fff;
+    display: block;
+    line-height: 38px;
+}
+
+.nav li:hover a {
+    color: #000;
+    background-color: #ccc;
+}
+
+.search-btn {
+    float: right;
+    line-height: 38px;
+    padding: 0px 12px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.search-btn:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+/* Blog name ------ */
+.blog-name {
+    width: 100%;
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+/* ------ End blog name */
+
+/* Blog image ------ */
+.jane-image {
+    position: relative;
+}
+
+.jane-subscribe {
+    position: absolute;
+    top: 50%;
+    color: #fff;
+}
+
+.jane-subscribe h2 {
+    letter-spacing: 4px;
+}
+
+.subscribe-btn {
+    border: none;
+    cursor: pointer;
+    font-family: oswald;
+}
+
+.subscribe-btn:hover {
+    opacity: 1;
+}
+/* ------ End blog image */
+
+#content {
+    border: 1px solid #ccc;
+}
+
+.advertise p {
+    width: 100%;
+    height: 100%;
+    line-height: 200px;
+    margin: 0;
+}
+
+.follow-list li:hover {
+    opacity: 0.6;
+}
+
+.form-control {
+    width: 100%;
+    border: 1px solid #ccc;
+}
+
+.submit-btn {
+    width: 100%;
+    background-color: #f44336;
+    border: none;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+.back-top-btn:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+.fotter-content {
+    background-color: #616161;
+    padding: 32px;
+}
+
+.comments {
+    padding-bottom: 12px;
+}
+
+.cmt-img {
+    width: 90px;
+    
+}
