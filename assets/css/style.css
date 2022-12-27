@@ -349,6 +349,10 @@ img {
     margin-top: 16px;
     margin-bottom: 16px;
     cursor: pointer;
+    width: 100%;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    color: #fff;
 }
 
 .submit-btn:hover {
