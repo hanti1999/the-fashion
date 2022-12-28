@@ -121,6 +121,11 @@ a {
     padding-right: 16px;
 }
 
+.padd-48-48 {
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
 .mar-16-16 {
     margin: 16px;
 }
@@ -292,14 +297,6 @@ img {
     background-color: #ccc;
     color: #000;
 }
-
-/* Blog name ------ */
-.blog-name {
-    width: 100%;
-    padding-top: 48px;
-    padding-bottom: 48px;
-}
-/* ------ End blog name */
 
 /* Blog image ------ */
 .jane-image {
