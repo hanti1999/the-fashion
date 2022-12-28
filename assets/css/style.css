@@ -121,9 +121,12 @@ a {
     padding-right: 16px;
 }
 
+.padd-32-32 {
+    padding: 32px;
+}
+
 .padd-48-48 {
-    padding-top: 48px;
-    padding-bottom: 48px;
+    padding: 48px;
 }
 
 .mar-16-16 {
@@ -239,6 +242,10 @@ img {
     background-color: #f1f1f1 !important;
 }
 
+.back-dark-gray {
+    background-color: #616161;
+}
+
 .grayscale {
     filter: grayscale(75%);
 }
@@ -266,6 +273,10 @@ img {
 
 .wid-100 {
     width: 100%;
+}
+
+.letter-spacing-4 {
+    letter-spacing: 4px;
 }
 /* ------ End common */
 
@@ -307,10 +318,6 @@ img {
     position: absolute;
     top: 50%;
     color: #fff;
-}
-
-.jane-subscribe h2 {
-    letter-spacing: 4px;
 }
 
 .subscribe-btn {
@@ -357,11 +364,6 @@ img {
     color: #000;
 }
 
-.fotter-content {
-    background-color: #616161;
-    padding: 32px;
-}
-
 .comments {
     padding-bottom: 12px;
 }
@@ -377,7 +379,7 @@ img {
     left: 0;
     right: 0;
     bottom: 0;
-    display: flex;
+    display: none;
     justify-content: center;
 }
 
@@ -385,10 +387,6 @@ img {
     width: 900px;
     margin-top: 100px;
     margin-bottom: auto;
-}
-
-.modal-container h1 {
-    letter-spacing: 3px;
 }
 
 .modal-close:hover {
