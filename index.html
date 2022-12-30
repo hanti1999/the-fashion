@@ -72,7 +72,7 @@
                                 </button>
                             </div>
                             <div class="float-right">
-                                <button class="back-black btn">
+                                <button class="js-cmt-btn back-black btn">
                                     Replies
                                     <span class="mar-l8 padd-lr8 back-white text-center">1</span>
                                 </button>
@@ -120,7 +120,7 @@
                                 </button>
                             </div>
                             <div class="float-right">
-                                <button class="back-black btn">
+                                <button class="js-cmt-btn back-black btn">
                                     Replies
                                     <span class="mar-l8 padd-lr8 back-white text-center">2</span>
                                 </button>
@@ -180,7 +180,7 @@
                                 </button>
                             </div>
                             <div class="float-right">
-                                <button class="back-black btn">
+                                <button class="js-cmt-btn back-black btn">
                                     Replies
                                     <span class="mar-l8 padd-lr8 back-white text-center">3</span>
                                 </button>
@@ -353,7 +353,7 @@
         </div>
     </div>
     
-    <div id="modal" class="js-modal">
+    <div class="modal js-modal">
         <div class="js-modal-container modal-container back-white" style="padding: 32px;">
             <div class="js-modal-close modal-close float-right padd-8-16 font-20">
                 <i class="fa-solid fa-xmark"></i>
@@ -374,6 +374,7 @@
         const modal = document.querySelector('.js-modal')
         const modalContainer = document.querySelector('.js-modal-container')
         const likeBtns = document.querySelectorAll('.js-like-btn')
+        const cmtBtns = document.querySelectorAll('.js-cmt-btn')
 
         function showSubscribe () {
             modal.classList.add('open')
@@ -395,12 +396,13 @@
             event.stopPropagation()
         })
 
-        function changeLike () {
-            
+        // js nút replies
+        for (const cmtBtn of cmtBtns ) {
+            cmtBtn.addEventListener('click', showComment)
         }
 
-        for (const likeBtn of likeBtns ) {
-            likeBtn.addEventListener('click', changeLike)
+        function showComment () {
+            comments.classList.add('open')
         }
     </script>
 </body>
