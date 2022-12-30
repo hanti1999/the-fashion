@@ -66,7 +66,7 @@
                         </p>
                         <div class="row">
                             <div class="float-left">
-                                <button class="back-white btn">
+                                <button class="js-like-btn back-white btn">
                                     <i class="fa-solid fa-thumbs-up"></i>
                                     Like
                                 </button>
@@ -79,7 +79,7 @@
                             </div>
                         </div>
                         <!-- Comments -->
-                        <div class="comments" style="display: block;">
+                        <div class="comments">
                             <div class="border-top padd-12-24" ></div>
                             <div class="row mar-b16">
                                 <div class="col col-20">
@@ -114,7 +114,7 @@
                         </p>
                         <div class="row">
                             <div class="float-left">
-                                <button class="back-white btn">
+                                <button class="js-like-btn back-white btn">
                                     <i class="fa-solid fa-thumbs-up"></i>
                                     Like
                                 </button>
@@ -127,7 +127,7 @@
                             </div>
                         </div>
                         <!-- Comments -->
-                        <div class="comments" style="display: block;">
+                        <div class="comments">
                             <div class="border-top padd-12-24" ></div>
                             <div class="row mar-b16">
                                 <div class="col col-20">
@@ -174,7 +174,7 @@
                         </p>
                         <div class="row">
                             <div class="float-left">
-                                <button class="back-white btn">
+                                <button class="js-like-btn back-white btn">
                                     <i class="fa-solid fa-thumbs-up"></i>
                                     Like
                                 </button>
@@ -187,7 +187,7 @@
                             </div>
                         </div>
                         <!-- Comments -->
-                        <div class="comments" style="display: block;">
+                        <div class="comments">
                             <div class="border-top padd-12-24" ></div>
                             <div class="row mar-b16">
                                 <div class="col-20 col">
@@ -373,6 +373,7 @@
         const closeModal = document.querySelector('.js-modal-close')
         const modal = document.querySelector('.js-modal')
         const modalContainer = document.querySelector('.js-modal-container')
+        const likeBtns = document.querySelectorAll('.js-like-btn')
 
         function showSubscribe () {
             modal.classList.add('open')
@@ -393,6 +394,14 @@
         modalContainer.addEventListener('click', function(event) {
             event.stopPropagation()
         })
+
+        function changeLike () {
+            
+        }
+
+        for (const likeBtn of likeBtns ) {
+            likeBtn.addEventListener('click', changeLike)
+        }
     </script>
 </body>
 </html>

@@ -366,6 +366,7 @@ img {
 
 .comments {
     padding-bottom: 12px;
+    display: block;
 }
 
 .cmt-img {
@@ -396,4 +397,8 @@ img {
 .modal-close:hover {
     background-color: #ccc;
     cursor: pointer;
+}
+
+.display-none {
+    display: none;
 }
