@@ -72,14 +72,14 @@
                                 </button>
                             </div>
                             <div class="float-right">
-                                <button class="js-cmt-btn back-black btn">
+                                <button class="js-reply-btn back-black btn">
                                     Replies
                                     <span class="mar-l8 padd-lr8 back-white text-center">1</span>
                                 </button>
                             </div>
                         </div>
                         <!-- Comments -->
-                        <div class="comments">
+                        <div class="reply">
                             <div class="border-top padd-12-24" ></div>
                             <div class="row mar-b16">
                                 <div class="col col-20">
@@ -120,14 +120,14 @@
                                 </button>
                             </div>
                             <div class="float-right">
-                                <button class="js-cmt-btn back-black btn">
+                                <button class="js-reply-btn back-black btn">
                                     Replies
                                     <span class="mar-l8 padd-lr8 back-white text-center">2</span>
                                 </button>
                             </div>
                         </div>
                         <!-- Comments -->
-                        <div class="comments">
+                        <div class="reply">
                             <div class="border-top padd-12-24" ></div>
                             <div class="row mar-b16">
                                 <div class="col col-20">
@@ -180,14 +180,14 @@
                                 </button>
                             </div>
                             <div class="float-right">
-                                <button class="js-cmt-btn back-black btn">
+                                <button class="js-reply-btn back-black btn">
                                     Replies
                                     <span class="mar-l8 padd-lr8 back-white text-center">3</span>
                                 </button>
                             </div>
                         </div>
                         <!-- Comments -->
-                        <div class="comments">
+                        <div class="reply">
                             <div class="border-top padd-12-24" ></div>
                             <div class="row mar-b16">
                                 <div class="col-20 col">
@@ -374,7 +374,7 @@
         const modal = document.querySelector('.js-modal')
         const modalContainer = document.querySelector('.js-modal-container')
         const likeBtns = document.querySelectorAll('.js-like-btn')
-        const cmtBtns = document.querySelectorAll('.js-cmt-btn')
+        const repBtns = document.querySelectorAll('.js-reply-btn')
 
         function showSubscribe () {
             modal.classList.add('open')
@@ -397,12 +397,12 @@
         })
 
         // js nút replies
-        for (const cmtBtn of cmtBtns ) {
-            cmtBtn.addEventListener('click', showComment)
+        for (const repBtn of repBtns ) {
+            repBtn.addEventListener('click', showComment)
         }
 
         function showComment () {
-            comments.classList.add('open')
+            reply.classList.add('open')
         }
     </script>
 </body>

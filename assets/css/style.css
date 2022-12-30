@@ -399,10 +399,10 @@ img {
 }
 
 /* js nút replies */
-.comments {
+.reply {
     display: none;
 }
 
-.comments.open {
+.reply.open {
     display: block;
 }
