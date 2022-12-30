@@ -337,7 +337,7 @@
                                 blog posts.
                             </p>
                             <input type="email" class="border-common wid-100 padd-8-8" required placeholder="Enter e-mail">
-                            <input type="submit" class="submit-btn" value="Subscribe">
+                            <input type="submit" class="submit-btn js-subscribe-btn" value="Subscribe">
                         </div>
                     </div>
                 </div>
@@ -353,9 +353,9 @@
         </div>
     </div>
     
-    <div id="modal">
-        <div class="modal-container back-white" style="padding: 32px;">
-            <div class="modal-close float-right padd-8-16 font-20">
+    <div id="modal" class="js-modal">
+        <div class="js-modal-container modal-container back-white" style="padding: 32px;">
+            <div class="js-modal-close modal-close float-right padd-8-16 font-20">
                 <i class="fa-solid fa-xmark"></i>
             </div>
             <h1 class="font-30 letter-spacing-4">Subscribe</h1>
@@ -369,7 +369,30 @@
     </div>
 
     <script>
+        const subsBtns = document.querySelectorAll('.js-subscribe-btn')
+        const closeModal = document.querySelector('.js-modal-close')
+        const modal = document.querySelector('.js-modal')
+        const modalContainer = document.querySelector('.js-modal-container')
 
+        function showSubscribe () {
+            modal.classList.add('open')
+        }
+
+        function closeSubscribe () {
+            modal.classList.remove('open')
+        }
+
+        for (const subsBtn of subsBtns ) {
+            subsBtn.addEventListener('click', showSubscribe)
+        }
+
+        closeModal.addEventListener('click', closeSubscribe)
+
+        modal.addEventListener('click', closeSubscribe)
+
+        modalContainer.addEventListener('click', function(event) {
+            event.stopPropagation()
+        })
     </script>
 </body>
 </html>
