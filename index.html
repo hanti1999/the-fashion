@@ -66,13 +66,13 @@
                         </p>
                         <div class="row">
                             <div class="float-left">
-                                <button class="js-like-btn back-white btn">
+                                <button class="back-white btn">
                                     <i class="fa-solid fa-thumbs-up"></i>
                                     Like
                                 </button>
                             </div>
                             <div class="float-right">
-                                <button class="js-reply-btn back-black btn">
+                                <button class="back-black btn">
                                     Replies
                                     <span class="mar-l8 padd-lr8 back-white text-center">1</span>
                                 </button>
@@ -114,13 +114,13 @@
                         </p>
                         <div class="row">
                             <div class="float-left">
-                                <button class="js-like-btn back-white btn">
+                                <button class="back-white btn">
                                     <i class="fa-solid fa-thumbs-up"></i>
                                     Like
                                 </button>
                             </div>
                             <div class="float-right">
-                                <button class="js-reply-btn back-black btn">
+                                <button class="back-black btn">
                                     Replies
                                     <span class="mar-l8 padd-lr8 back-white text-center">2</span>
                                 </button>
@@ -174,13 +174,13 @@
                         </p>
                         <div class="row">
                             <div class="float-left">
-                                <button class="js-like-btn back-white btn">
+                                <button class="back-white btn">
                                     <i class="fa-solid fa-thumbs-up"></i>
                                     Like
                                 </button>
                             </div>
                             <div class="float-right">
-                                <button class="js-reply-btn back-black btn">
+                                <button class="back-black btn">
                                     Replies
                                     <span class="mar-l8 padd-lr8 back-white text-center">3</span>
                                 </button>
@@ -373,8 +373,6 @@
         const closeModal = document.querySelector('.js-modal-close')
         const modal = document.querySelector('.js-modal')
         const modalContainer = document.querySelector('.js-modal-container')
-        const likeBtns = document.querySelectorAll('.js-like-btn')
-        const repBtns = document.querySelectorAll('.js-reply-btn')
 
         function showSubscribe () {
             modal.classList.add('open')
@@ -395,15 +393,6 @@
         modalContainer.addEventListener('click', function(event) {
             event.stopPropagation()
         })
-
-        // js nút replies
-        for (const repBtn of repBtns ) {
-            repBtn.addEventListener('click', showComment)
-        }
-
-        function showComment () {
-            reply.classList.add('open')
-        }
     </script>
 </body>
 </html>

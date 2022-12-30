@@ -397,12 +397,3 @@ img {
     background-color: #ccc;
     cursor: pointer;
 }
-
-/* js nút replies */
-.reply {
-    display: none;
-}
-
-.reply.open {
-    display: block;
-}
