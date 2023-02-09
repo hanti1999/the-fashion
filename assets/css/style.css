@@ -391,9 +391,19 @@ img {
     width: 900px;
     margin-top: 100px;
     margin-bottom: auto;
+    animation: grow ease .5s;
 }
 
 .modal-close:hover {
     background-color: #ccc;
     cursor: pointer;
+}
+
+@keyframes grow {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
 }
